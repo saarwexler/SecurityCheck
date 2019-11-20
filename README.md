@@ -1,5 +1,7 @@
 ## Enterprise Threat Protector Secuirty Review
 
+[Link](https://saarwexler.github.io/SecurityCheck/)
+
 Click below to see how your security stack stacks up against common security gaps – with recommendations on how to better protect your users and data. The Enterprise Threat Protector Security Preview is free, confidential, safe and ready to start assessing now.
 
 ## Test Your Network Security Now
