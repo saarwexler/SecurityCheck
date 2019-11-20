@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Enterprise Threat Protector Secuirty Review
 
-You can use the [editor on GitHub](https://github.com/saarwexler/SecurityCheck/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Click below to see how your security stack stacks up against common security gaps – with recommendations on how to better protect your users and data. The Enterprise Threat Protector Security Preview is free, confidential, safe and ready to start assessing now.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Test Your Network Security Now
+It's free and quick!
 
-### Markdown
+### Why put your network to the test?
+Despite costly on-premises security appliances, many enterprises find their networks still remain vulnerable due to functionality, performance, or configuration issues. Enterprise Threat Protector Security Preview instantly scans your security stack for gaps often missed, and can help you take corrective action.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Enterprise Threat Protector Security Preview is completely safe. The tool runs within your browser, won’t introduce malware, and doesn’t access your data or change settings. In order to observe test results, Security Preview must run over an unencrypted connection (HTTP). While you may get a browser warning, this is expected behavior and can be ignored. As it does test your existing network security infrastructure, you may see alerts from various systems.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/saarwexler/SecurityCheck/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<img src="https://media.xconomy.com/wordpress/wp-content/images/2018/02/06141224/Akamai-logo.jpg" width="700" height="600">
