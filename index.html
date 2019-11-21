@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Preview</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="background" id="main">
+    <div class="header">
+        <span class="main">Name of application</span>
+
+    </div>
+
+    <div class="test_network">
+        <h2 class="head-2">Test Your Network Security</h2>
+        <p>Despite costly on-premises security appliances, many enterprises find their networks still
+            remain vulnerable due to functionality, performance, or configuration issues. Security Preview
+            instantly scans your security stack for gaps often missed, and can help you take corrective action. </p>
+        <button class="btn test" type="button" id="startCheck">Test Your Network Security Now ></button>
+    </div>
+    <div class="image">
+        <img class="logo" src="images/logo.png">
+    </div>
+
+</div>
+
+
+<div class="results" id="result">
+    <div class="report-header">
+        <span class="main-report">Name of application</span>
+        <img class="logo-report" src="images/logo.png">
+    </div>
+    <div class="info">
+        <div class="part">
+            <h5>Security Assesment</h5>
+            <div class="icon-image">
+                <img class="pic" src="images/pic1.png">
+            </div>
+            <div class="counter">
+                <div class="number">
+                    <div class="tag">
+                        <img class="icon-fail" src="images/pic3.png">
+                        <span class="tag-text">0</span>
+                        <span class="tag-text">Failed</span>
+                    </div>
+                    <div class="tag">
+                        <img class="icon-pass" src="images/pic4.png">
+                        <span class="tag-text">0</span>
+                        <span class="tag-text">Passed</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <h5>Data Protection</h5>
+            <div class="icon-image">
+                <img src="images/pic2.png" class="pic">
+            </div>
+            <div class="counter">
+                <div class="number">
+                    <div class="tag">
+                        <img class="icon-fail" src="images/pic3.png">
+                        <span class="tag-text">0</span>
+                        <span class="tag-text">Failed</span>
+                    </div>
+                    <div class="tag">
+                        <img class="icon-pass" src="images/pic4.png">
+                        <span class="tag-text">0</span>
+                        <span class="tag-text">Passed</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="loading">
+            <div id="progress">
+                <div id="loader-bar"></div>
+            </div>
+            <div id="loader-info"></div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div class="security">
+            <div class="title">
+                <span>STATUS</span>
+                <span>TEST NAME</span>
+                <span>TEST DETAILS</span>
+            </div>
+            <div report-result="result">
+
+            </div>
+            <div class="security">
+                <h3>Security Assessment</h3>
+                <div class="title">
+                    <span>STATUS</span>
+                    <span>TEST NAME</span>
+                    <span>TEST DETAILS</span>
+                </div>
+                <div report-result="result">
+
+                </div>
+            </div>
+
+            <div class="data-protection">
+                <h3>Data Protection Assessment</h3>
+                <div class="title">
+                    <span>STATUS</span>
+                    <span>TEST NAME</span>
+                    <span>TEST DETAILS</span>
+                </div>
+                <div report-result="result">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/main.js"></script>
+</html>
