@@ -97,12 +97,13 @@ p {
 .info {
     width: 90%;
     margin-left: 5vw;
-    margin-top: 2vh;
+    margin-top: 4vh;
     background-color: white;
     border-radius: 5px;
 }
 
 .part {
+    margin-top: 3vh;
     width: 44vw;
     display: inline-block;
     height: 25vh;
@@ -187,4 +188,59 @@ h5 {
     background-color: #d9d9d9;
     height: 1vh;
     width: 90%;
+}
+
+.row {
+    background: white;
+}
+
+.first-col {
+    width: 5vw;
+    padding-left: 1vw;
+}
+
+.second-col {
+    width: 15vw;
+    padding-left: 1vw;
+}
+
+.third-col {
+    width: 10vw;
+}
+
+.fourth-col {
+    width: 60vw;
+    padding-left: 1vw;
+}
+
+tbody {
+    width: 100%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 90%;
+    margin-left: 5vw;
+}
+
+.table-title {
+    color: #8a8a8a;
+}
+
+.row:before {
+    display: none;
+}
+
+.td-title {
+    padding-left: 1vw;
+}
+
+.report {
+    margin-top: 7vh;
+}
+
+.spinner {
+    height: 1.5vh;
+    padding-left: 0.5vw;
 }
