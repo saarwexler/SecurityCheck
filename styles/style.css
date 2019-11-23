@@ -225,6 +225,7 @@ table {
     width: 90%;
     margin-left: 5vw;
     font-size: 13pt;
+    margin-top: 2vh;
 }
 
 .table-title {
@@ -244,8 +245,8 @@ table {
 }
 
 .spinner {
-    height: 1.5vh;
-    padding-left: 0.5vw;
+    height: 2.5vh;
+    padding-left: 1vw;
 }
 
 .data-protection {
