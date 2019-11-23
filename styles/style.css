@@ -100,13 +100,14 @@ p {
     margin-top: 4vh;
     background-color: white;
     border-radius: 5px;
+    height: 40vh;
 }
 
 .part {
     margin-top: 3vh;
-    width: 44vw;
+    width: 43vw;
     display: inline-block;
-    height: 25vh;
+    height: 30vh;
 }
 
 .part + .part {
@@ -121,7 +122,7 @@ h5 {
 .counter {
     display: inline-block;
     margin-left: 1vw;
-    width: 30vw;
+    width: 25vw;
     height: 15vh;
 }
 
@@ -150,13 +151,13 @@ h5 {
 
 .number {
     display: inline-block;
-    width: 15vw;
+    width: 12vw;
 }
 
 .tag {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: inline-block;
-    width: 15vw;
+    width: 13vw;
 }
 
 .tag-text {
@@ -165,7 +166,6 @@ h5 {
 }
 
 #loading {
-    margin-top: 4vh;
     width: 90%;
     height: 5vh;
     background-color: white;
@@ -200,17 +200,19 @@ h5 {
 }
 
 .second-col {
-    width: 15vw;
+    width: 20vw;
     padding-left: 1vw;
 }
 
 .third-col {
-    width: 10vw;
+    width: 5vw;
 }
 
 .fourth-col {
+    padding-top: 3vh;
     width: 60vw;
     padding-left: 1vw;
+    display: flex;
 }
 
 tbody {
@@ -222,6 +224,7 @@ table {
     border-spacing: 0 15px;
     width: 90%;
     margin-left: 5vw;
+    font-size: 13pt;
 }
 
 .table-title {
@@ -243,4 +246,8 @@ table {
 .spinner {
     height: 1.5vh;
     padding-left: 0.5vw;
+}
+
+.data-protection {
+    margin-top: 5vh;
 }

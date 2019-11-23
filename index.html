@@ -42,12 +42,12 @@
                 <div class="number">
                     <div class="tag">
                         <img class="icon-fail" src="images/pic3.png">
-                        <span class="tag-text">0</span>
+                        <span class="tag-text" id="sec-fail">0</span>
                         <span class="tag-text">Failed</span>
                     </div>
                     <div class="tag">
                         <img class="icon-pass" src="images/pic4.png">
-                        <span class="tag-text">0</span>
+                        <span class="tag-text" id="sec-pass">0</span>
                         <span class="tag-text">Passed</span>
                     </div>
 
@@ -63,12 +63,12 @@
                 <div class="number">
                     <div class="tag">
                         <img class="icon-fail" src="images/pic3.png">
-                        <span class="tag-text">0</span>
+                        <span class="tag-text" id="data-fail">0</span>
                         <span class="tag-text">Failed</span>
                     </div>
                     <div class="tag">
                         <img class="icon-pass" src="images/pic4.png">
-                        <span class="tag-text">0</span>
+                        <span class="tag-text" id="data-pass">0</span>
                         <span class="tag-text">Passed</span>
                     </div>
 
@@ -79,7 +79,7 @@
             <div id="progress">
                 <div id="loader-bar"></div>
             </div>
-            <div id="loader-info"></div>
+            <div id="loader-info">0%</div>
         </div>
     </div>
 
@@ -119,6 +119,7 @@
                         </td>
 
                         <td class="fourth-col">
+                            This checks if you can access one of the latest validated phishing sites uncovered by Phishtank.com.
                             This checks if you can access one of the latest validated phishing sites uncovered by Phishtank.com.
                         </td>
                     </tr>
