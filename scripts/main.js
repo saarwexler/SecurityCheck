@@ -20,7 +20,7 @@
           let map = new Map([["test1",'http://akamaietpphishingtest.com'],
           ['test2', 'http://akamaietpphishingtest.com'],
           ['test3', 'http://akamaietpphishingtest.com'],
-          ['test4', 'http://akamaietpriskydomaintest.com'],
+          ['test4', 'http://akamaietpphishingtest.com'],
           ['test5', 'http://akamaietpcompromisedmalwaretest.com/knownbadmacro.xlsm'],
           ['test6', 'http://akamaietpcompromisedmalwaretest.com/knownbadmalware.exe'],
           ['test7', 'http://akamaietpcompromisedphishingtest.com/knownbadphisihing.html'],
