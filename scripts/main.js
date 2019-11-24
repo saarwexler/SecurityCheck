@@ -11,17 +11,28 @@
             $("#result").css("display", "block");
             let count = 1;
             for (let id of ids) {
-                count = run_test(id, count)
+               run_test(id).then( result =>  testResult(id, result)).then(test(count))
+               count++;
             }
         });
 
         let run_test = function (id, count) {
-            setTimeout(function () {
-                let answer = Math.floor(Math.random() * 2);
-                testResult(id, answer).then();
-                test(count).then();
-            }, 1000);
-            return count + 1;
+          let map = new Map([["test1",'http://akamaietpphishingtest.com'],
+          ['test2', 'http://akamaietpphishingtest.com'],
+          ['test3', 'http://akamaietpphishingtest.com'],
+          ['test4', 'http://akamaietpriskydomaintest.com'],
+          ['test5', 'http://akamaietpcompromisedmalwaretest.com/knownbadmacro.xlsm'],
+          ['test6', 'http://akamaietpcompromisedmalwaretest.com/knownbadmalware.exe'],
+          ['test7', 'http://akamaietpcompromisedphishingtest.com/knownbadphisihing.html'],
+          ['test8', 'http://akamaietpcompromisedcnctest.com/knownbadcnc.html'],          
+          ['test9', 'http://akamaietpcompromisedmalwaretest.com/badscript.js'],
+          ['test10', 'http://akamaietpcompromisedmalwaretest.com/badscript.js'],
+          ['test11', 'http://akamaietpcompromisedmalwaretest.com/badscript.js']]);
+
+          const url = map.get(id) 
+          return fetch(url).then(
+              response => response.url.indexOf("error") > -1
+              );          
         };
 
         function test(count) {
@@ -29,12 +40,12 @@
             let percent = count / total * 100 + "%";
             $("#loader-bar").css("width", percent);
             $("#loader-info").text(parseInt(percent) + "%");
-            return Promise.resolve()
         }
 
         function testResult(id, answer) {
             let element = document.getElementById(id);
-            if (answer === 0) {
+            console.log( id + ": " +answer)
+            if (answer === false) {
                 element.src = "http://www.proredetelecom.com.br/wp-content/uploads/2019/01/icon-fail.png";
                 if (id.slice(4) <= 8) {
                     security_failed++;
