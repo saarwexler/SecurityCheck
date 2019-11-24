@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security Preview</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="background" id="main">
+    <div class="header">
+        <span class="main">Name of application</span>
+
+    </div>
+
+    <div class="test_network">
+        <h2 class="head-2">Test Your Network Security</h2>
+        <p>Despite costly on-premises security appliances, many enterprises find their networks still
+            remain vulnerable due to functionality, performance, or configuration issues. Security Preview
+            instantly scans your security stack for gaps often missed, and can help you take corrective action. </p>
+        <button class="btn test" type="button" id="startCheck">Test Your Network Security Now ></button>
+    </div>
+    <div class="image">
+        <img class="logo" src="images/logo.png">
+    </div>
+
+</div>
+
+
+<div class="results" id="result">
+    <div class="report-header">
+        <span class="main-report">Name of application</span>
+        <img class="logo-report" src="images/logo.png">
+    </div>
+    <div class="info">
+        <div class="part">
+            <h5>Security Assesment</h5>
+            <div class="icon-image">
+                <img class="pic" src="images/pic1.png">
+            </div>
+            <div class="counter">
+                <div class="number">
+                    <div class="tag">
+                        <img class="icon-fail" src="images/pic3.png">
+                        <span class="tag-text" id="sec-fail">0</span>
+                        <span class="tag-text">Failed</span>
+                    </div>
+                    <div class="tag">
+                        <img class="icon-pass" src="images/pic4.png">
+                        <span class="tag-text" id="sec-pass">0</span>
+                        <span class="tag-text">Passed</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="part">
+            <h5>Data Protection</h5>
+            <div class="icon-image">
+                <img src="images/pic2.png" class="pic">
+            </div>
+            <div class="counter">
+                <div class="number">
+                    <div class="tag">
+                        <img class="icon-fail" src="images/pic3.png">
+                        <span class="tag-text" id="data-fail">0</span>
+                        <span class="tag-text">Failed</span>
+                    </div>
+                    <div class="tag">
+                        <img class="icon-pass" src="images/pic4.png">
+                        <span class="tag-text" id="data-pass">0</span>
+                        <span class="tag-text">Passed</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="loading">
+            <div id="progress">
+                <div id="loader-bar"></div>
+            </div>
+            <div id="loader-info">0%</div>
+        </div>
+    </div>
+
+    <div class="report">
+        <div class="security">
+            <h5>Security Assessment</h5>
+            <div>
+                <table id="security-results"  align="center">
+                    <tr class="table-title">
+                        <td class="td-title">
+                            <label>STATUS</label>
+                        </td>
+
+                        <td class="td-title">
+                            <label>TEST NAME</label>
+                        </td>
+
+                        <td class="td-title">
+                        </td>
+
+                        <td class="td-title">
+                            <label>TEST DETAILS</label>
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" class="spinner" id="test1">
+                        </td>
+
+                        <td class="second-col">
+                            Detect a phishing attack
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/phishing.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This checks if you can access one of the latest validated phishing sites uncovered by Phishtank.com.
+                            This checks if you can access one of the latest validated phishing sites uncovered by Phishtank.com.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test2" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Malware Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/malware1.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test3" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            CNC Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/spy.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test4" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Risky Domain Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/risky.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test5" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Malware Excel MacroURL Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/malware2.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test6" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            DNS Exfiltration Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/dns.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test7" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Malware Javascript Url Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/link1.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test8" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Proxy Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/proxy.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="data-protection">
+            <h5>Data Protection Assessment</h5>
+            <div>
+                <table id="data-results"  align="center">
+                    <tr class="table-title">
+                        <td class="td-title">
+                            <label>STATUS</label>
+                        </td>
+
+                        <td class="td-title">
+                            <label>TEST NAME</label>
+                        </td>
+
+                        <td class="td-title">
+                        </td>
+
+                        <td class="td-title">
+                            <label>TEST DETAILS</label>
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" class="spinner" id="test9">
+                        </td>
+
+                        <td class="second-col">
+                            Phishing URL Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/data1.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This checks if you can access one of the latest validated phishing sites uncovered by Phishtank.com.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test10" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            Malware URL Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/data2.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="first-col">
+                            <img src="images/spinner.gif" id="test11" class="spinner">
+                        </td>
+
+                        <td class="second-col">
+                            CNC URL Test
+                        </td>
+
+                        <td class="third-col">
+                            <img class="malware" src="images/data3.png" width=50 height=50/>
+                        </td>
+
+                        <td class="fourth-col">
+                            This tests if you can download a benign object from a known malicious site. It does not attempt to download actual malware.
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="scripts/Tests.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/main.js"></script>
+</html>
